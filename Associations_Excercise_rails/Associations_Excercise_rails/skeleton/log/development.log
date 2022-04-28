@@ -82,3 +82,13 @@
   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
 DEPRECATION WARNING: Passing a class to the `class_name` is deprecated and will raise an ArgumentError in Rails 5.2. It eagerloads more classes than necessary and potentially creates circular dependencies. Please pass the class name as a string: `belongs_to :user, class_name: 'User'` (called from <class:Enrollment> at /mnt/d/miker/Desktop/APPACADEMY BOOTCAMP/Week 5/W5D4/Associations_Excercise_rails/Associations_Excercise_rails/skeleton/app/models/enrollment.rb:14)
   [1m[36mEnrollment Load (0.5ms)[0m  [1m[34mSELECT "enrollments".* FROM "enrollments" WHERE "enrollments"."student_id" = $1[0m  [["student_id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+DEPRECATION WARNING: Passing a class to the `class_name` is deprecated and will raise an ArgumentError in Rails 5.2. It eagerloads more classes than necessary and potentially creates circular dependencies. Please pass the class name as a string: `belongs_to :user, class_name: 'User'` (called from <class:Enrollment> at /mnt/d/miker/Desktop/APPACADEMY BOOTCAMP/Week 5/W5D4/Associations_Excercise_rails/Associations_Excercise_rails/skeleton/app/models/enrollment.rb:14)
+  [1m[36mEnrollment Load (0.3ms)[0m  [1m[34mSELECT "enrollments".* FROM "enrollments" WHERE "enrollments"."student_id" = $1[0m  [["student_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mEnrollment Load (0.3ms)[0m  [1m[34mSELECT "enrollments".* FROM "enrollments" WHERE "enrollments"."student_id" = $1[0m  [["student_id", 1]]
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" ORDER BY "courses"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mEnrollment Load (0.4ms)[0m  [1m[34mSELECT "enrollments".* FROM "enrollments" WHERE "enrollments"."course_id" = $1[0m  [["course_id", 1]]
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" ORDER BY "courses"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mEnrollment Load (0.3ms)[0m  [1m[34mSELECT "enrollments".* FROM "enrollments" WHERE "enrollments"."course_id" = $1[0m  [["course_id", 2]]
+  [1m[36mEnrollment Load (0.4ms)[0m  [1m[34mSELECT  "enrollments".* FROM "enrollments" ORDER BY "enrollments"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]

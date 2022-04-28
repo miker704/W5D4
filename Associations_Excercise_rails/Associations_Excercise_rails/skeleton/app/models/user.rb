@@ -16,13 +16,13 @@ class User < ApplicationRecord
     
 
 
-    # has_many(
-    #     :courses,
-    #     class_name: 'Course',
-    #     foreign_key: :course_id,
-    #     foreign_key: :instructor_id,
-    #     primary_key: :id
-    # )
+    has_many(
+        :courses,
+        class_name: 'Course',
+        foreign_key: :course_id,
+        foreign_key: :instructor_id,
+        primary_key: :id
+    )
     
 
 end
