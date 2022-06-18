@@ -25,4 +25,17 @@ class Course < ApplicationRecord
     #     foreign_key: :instructor_id,
     #     primary_key: :id
     # )
+
+
+    belongs_to :instructor,
+    primary_key: :id
+    class_name: User,
+    foreign_key: :instructor_id
+
+    belongs_to :prerequiste,
+    primary_key: :id,
+    class_name: Course,
+    foreign_key: prereq_id,
+    
+    
 end
